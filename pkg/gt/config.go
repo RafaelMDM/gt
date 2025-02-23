@@ -90,7 +90,7 @@ func getArgs(options *Options) ([]string, error) {
 	default:
 		// gt rm [location_name]
 		if numArgs != 2 {
-			return nil, fmt.Errorf("Add command expects 1 arguments, but got %d", numArgs-1)
+			return nil, fmt.Errorf("Remove command expects 1 arguments, but got %d", numArgs-1)
 		}
 		return options.Args[1:], nil
 	}
